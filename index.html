@@ -3,131 +3,241 @@
     <head>
         <title>GreatUniHack Winter 2015</title>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css"/>
+
+        <!-- Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <section id="sign-up">
-            <nav>
-                <ul>
-                    <li class="menu-item">
-                        <a href="#faq">FAQ</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#past-events">Past Events</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#partners">Partners</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <h1>GreatUniHack Winter</h1>
-            <ul class="actions">
-                <li>
-                    <a target="_blank" href="https://www.eventbrite.co.uk/">
-                        <button>
-                            Sign Up!
-                        </button>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section id="faq">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-questions">
-                <div class="faq-question">
-                    <h3>How is babby formed?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
-                </div>
-                <div class="faq-question">
-                    <h3>How is babby formed?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
-                </div>
-                <div class="faq-question">
-                    <h3>How is babby formed?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
-                </div>
-                <div class="faq-question">
-                    <h3>How is babby formed?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
-                </div>
-                <div class="faq-question">
-                    <h3>How is babby formed?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
-                </div>
-                <div class="faq-question">
-                    <h3>How is babby formed?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
-                </div>
-            </div>
-        </section>
-        <section id="past-events">
-            <h2>Past Events</h2>
-            <div class="events">
-                <a target="_blank" href="http://2014.greatunihack.com/">
-                    <div class="event">
-                        <img src="assets/greatunihack-2014.jpg" alt="GreatUniHack 2014">
-                        <h3>GreatUniHack 2014</h3>
-                    </div>
-                </a>
-                <a target="_blank" href="http://2015s.greatunihack.com/">
-                    <div class="event">
-                        <img src="assets/greatunihack-spring-2015.jpg" alt="GreatUniHack Spring 2015">
-                        <h3>GreatUniHack 2015</h3>
-                    </div>
-                </a>
-                <a target="_blank" href="http://lhd.hacksoc.com/">
-                    <div class="event">
-                        <img src="assets/local-hack-day-2015.jpg" alt="Local Hack Day 2015">
-                        <h3>Local Hack Day 2015</h3>
-                    </div>
-                </a>
-            </div>
-            <ul class="actions">
-                <li>
-                    <a target="_blank" href="https://drive.google.com/file/d/0BxSfLz74ghGpcWJ3TjBPZExxdkE/view">
-                        <button>
-                            Sponsor Us
-                        </button>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section id="partners">
-            <h2>Partners</h2>
-            <div class="partners">
-                <img class="partner" src="assets/mlh.png" alt="MLH">
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="contact-form">
-                <form action="#" method="post">
-                    <div class="user-details">
-                        <div class="user-name">
-                            <input type="text" placeholder="Your Name" name="name"></input>
-                        </div>
-                        <div class="user-email">
-                            <input type="text" placeholder="Your Email" name="email"></input>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <textarea placeholder="Message" name="message"></textarea>
-                    </div>
-                    <div class="form-actions">
-                        <ul>
+        <div class="container-fluid main-container">
+            <div class="row banner-container">
+                <div class="col-xs-12">
+                    <section id="sign-up">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="collapse navbar-collapse" id="navbar-collapse">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <ul class="nav navbar-nav">
+                                            <li class="menu-item">
+                                                <a href="#faq">FAQ</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="#past-events">Past Events</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="#partners">Partners</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="#contact">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <h1>GreatUniHack Winter</h1>
+                        <ul class="actions">
                             <li>
-                                <input class="submit-button" type="submit" value="Send Message"></input>
-                            </li>
-                            <li>
-                                <input class="reset-button" type="reset" value="Clear Form"></input>
+                                <a target="_blank" href="https://www.eventbrite.co.uk/">
+                                    <button>
+                                        Sign Up!
+                                    </button>
+                                </a>
                             </li>
                         </ul>
-                    </div>
-                </form>
+                    </section>
+                </div>
             </div>
-        </section>
+            <div class="row faq-container">
+                <div class="col-xs-12">
+                    <section id="faq">
+                        <div class="row">
+                            <div class="span-12">
+                                <h2>Frequently Asked Questions</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-md-11 col-md-offset-1 faq-question">
+                                            <h3>How is babby formed?</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-11 col-md-offset-1 faq-question">
+                                            <h3>How is babby formed?</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-11 col-md-offset-1 faq-question">
+                                            <h3>How is babby formed?</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-md-11 faq-question">
+                                            <h3>How is babby formed?</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-11 faq-question">
+                                            <h3>How is babby formed?</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-11 faq-question">
+                                            <h3>How is babby formed?</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row past-events-container">
+                <div class="col-xs-12">
+                    <section id="past-events">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h2>Past Events</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                                    <a target="_blank" href="http://2014.greatunihack.com/">
+                                        <div class="event">
+                                            <img src="assets/greatunihack-2014.jpg" alt="GreatUniHack 2014">
+                                            <h3>GreatUniHack 2014</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                                    <a target="_blank" href="http://2015s.greatunihack.com/">
+                                        <div class="event">
+                                            <img src="assets/greatunihack-spring-2015.jpg" alt="GreatUniHack Spring 2015">
+                                            <h3>GreatUniHack 2015</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                                    <a target="_blank" href="http://lhd.hacksoc.com/">
+                                        <div class="event">
+                                            <img src="assets/local-hack-day-2015.jpg" alt="Local Hack Day 2015">
+                                            <h3>Local Hack Day 2015</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <ul class="actions">
+                                    <li>
+                                        <a target="_blank" href="https://drive.google.com/file/d/0BxSfLz74ghGpcWJ3TjBPZExxdkE/view">
+                                            <button>
+                                                Sponsor Us
+                                            </button>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row partners-container">
+                <div class="col-xs-12">
+                    <section id="partners">
+                        <div class="row">
+                            <div class="span-12">
+                                <h2>Partners</h2>
+                            </div>
+                        </div>
+                        <div class="row partners">
+                            <div class="col-sm-4 col-sm-offset-4">
+                                <img src="assets/mlh.png" alt="MLH" title="Major League Hacking">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row contact-container">
+                <div class="col-xs-12">
+                    <section id="contact">
+                        <div class="row">
+                            <div class="span-12">
+                                <h2>Contact</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p style="color:red;" id="contact-error"></p>
+                            <p style="color:green;" id="contact-success"></p>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2">
+                                <form action="#" method="post" id="the-form">
+                                    <div class="form-inline">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="exampleInputEmail3">Name</label>
+                                                <input type="text" class="form-control" placeholder="Your Name" name="name" required></input>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="exampleInputEmail3">Name</label>
+                                                <input type="email" class="form-control" placeholder="Your Email" name="email" required></input>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <textarea class="form-control" placeholder="Message" name="message" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-actions">
+                                        <ul>
+                                            <li>
+                                                <input class="submit-button" type="submit" value="Send Message"></input>
+                                            </li>
+                                            <li>
+                                                <input class="reset-button" type="reset" value="Clear Form"></input>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- Jquery -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        $("#the-form").on("submit",function (e){e.preventDefault();$.post("./process_form.php", e.target.serialize(),function(r){$.parseJSON(r)[0]=="success"&&$("#contact-success").html("Message sent successfully!")||($.parseJSON(r)[0]=="error"&&$("#contact-error").html(parseJSON(r))[1])})});
+        </script>
     </body>
 </html>
