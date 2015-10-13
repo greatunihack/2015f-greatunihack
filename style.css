@@ -176,6 +176,18 @@ ul.nav {
     width: 100%;
 }
 
+#the-form {
+    overflow: hidden;
+}
+
+#the-form .form-inline {
+    overflow: hidden;
+}
+
+#the-form .form-inline .form-group {
+    overflow: hidden;
+}
+
 #the-form .form-group textarea {
     min-height: 16em;
     width: 100%;
@@ -274,7 +286,7 @@ ul.nav {
     }
 
 .form-actions {
-    margin-top: 20px;
+    margin: 20px 10px 40px;
 }
 
     .form-actions ul {

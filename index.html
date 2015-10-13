@@ -189,9 +189,13 @@
                                 <h2>Contact</h2>
                             </div>
                         </div>
-                        <div class="row">
-                            <p style="color:red;" id="contact-error"></p>
-                            <p style="color:green;" id="contact-success"></p>
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <p class="pull-left" style="color:red;" id="contact-error"></p>
+                                    <p class="pull-left" style="color:green;" id="contact-success"></p>
+                                </div>
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-8 col-sm-offset-2">
@@ -200,13 +204,13 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label class="sr-only" for="exampleInputEmail3">Name</label>
-                                                <input type="text" class="form-control" placeholder="Your Name" name="name" required></input>
+                                                <input type="text" class="form-control" placeholder="Your Name" name="name" required>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label class="sr-only" for="exampleInputEmail3">Name</label>
-                                                <input type="email" class="form-control" placeholder="Your Email" name="email" required></input>
+                                                <input type="email" class="form-control" placeholder="Your Email" name="email" required>
                                             </div>
                                         </div>
                                     </div>
@@ -215,17 +219,21 @@
                                             <textarea class="form-control" placeholder="Message" name="message" required></textarea>
                                         </div>
                                     </div>
-                                    <div class="form-actions">
-                                        <ul>
-                                            <li>
-                                                <input class="submit-button" type="submit" value="Send Message"></input>
-                                            </li>
-                                            <li>
-                                                <input class="reset-button" type="reset" value="Clear Form"></input>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </form>
+                                </formf>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2">
+                                <div class="form-actions">
+                                    <ul>
+                                        <li>
+                                            <input class="submit-button" type="submit" value="Send Message">
+                                        </li>
+                                        <li>
+                                            <input class="reset-button" type="reset" value="Clear Form">
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -237,7 +245,7 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script type="text/javascript">
-        $("#the-form").on("submit",function (e){e.preventDefault();$.post("./process_form.php", e.target.serialize(),function(r){$.parseJSON(r)[0]=="success"&&$("#contact-success").html("Message sent successfully!")||($.parseJSON(r)[0]=="error"&&$("#contact-error").html(parseJSON(r))[1])})});
+        (function (window, undefined){$("#the-form").on("submit",function (e){e.preventDefault();$.post("./process_form.php", $("#the-form").serialize(),function (r){$.parseJSON(r)[0]=="success"&&$("#contact-success").html("Message sent successfully!")||($.parseJSON(r)[0]=="error"&&$("#contact-error").html($.parseJSON(r)[1]))})});})(window, undefined);
         </script>
     </body>
 </html>
