@@ -245,7 +245,7 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script type="text/javascript">
-        (function (window, undefined){$("#the-form").on("submit",function (e){e.preventDefault();$.post("./process_form.php", $("#the-form").serialize(),function (r){$.parseJSON(r)[0]=="success"&&$("#contact-success").html("Message sent successfully!")||($.parseJSON(r)[0]=="error"&&$("#contact-error").html($.parseJSON(r)[1]))})});})(window, undefined);
+        (function (window, undefined){$("#the-form").on("submit",function (e){e.preventDefault();$.post("./process_form.php", $("#the-form").serialize(),function (r){$.parseJSON(r)[0]=="success"&&$("#contact-success").html("Message sent successfully!")&&$("#contact-error").html("")||($.parseJSON(r)[0]=="error"&&$("#contact-error").html($.parseJSON(r)[1])&&$("#contact-success").html(""))})});})(window, undefined);
         </script>
     </body>
 </html>
