@@ -1,251 +1,479 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>GreatUniHack Winter 2015</title>
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style.css"/>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#660099">
 
-        <!-- Metas -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <div class="container-fluid main-container">
-            <div class="row banner-container">
-                <div class="col-xs-12">
-                    <section id="sign-up">
-                        <nav class="navbar navbar-default">
-                            <div class="container-fluid">
-                                <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>
-                                <div class="collapse navbar-collapse" id="navbar-collapse">
-                                    <div class="col-sm-8 col-sm-offset-2">
-                                        <ul class="nav navbar-nav">
-                                            <li class="menu-item">
-                                                <a href="#faq">FAQ</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="#past-events">Past Events</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="#partners">Partners</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="#contact">Contact</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </nav>
-                        <h1>GreatUniHack Winter</h1>
-                        <ul class="actions">
-                            <li>
-                                <a target="_blank" href="https://www.eventbrite.co.uk/">
-                                    <button>
-                                        Sign Up!
-                                    </button>
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
+
+  <meta property="og:title" content="GreatUniHack Winter 2015 - #learn #build #share, 4-6 December 2015."/>
+  <meta property="og:®type" content="website"/>
+  <meta property="og:url" content="http://greatunihack.com"/>
+  <meta property="og:image" content="./assets/title/guh-logo.png"/>
+  <meta property="og:description"
+        content="GreatUniHack Winter 2015 is a programming event for students by students: 4-6 December 2015."/>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="GreatUniHack Winter 2015 is a programming event for students by students."/>
+    <meta name="author" content="GreatUniHack">
+
+
+    <title>GreatUniHack Winter 2015 - 36 Hours Hackathon</title>
+
+    <link href="assets/min/plugin-min.css" type="text/css" rel="stylesheet">
+    <!--<link href="assets/css/style.css" type="text/css" rel="stylesheet">-->
+    <link href="assets/min/custom-min.css" type="text/css" rel="stylesheet">
+
+
+</head>
+<body id="top" class="scrollspy">
+
+
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div>
+
+<!--Navigation-->
+<div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container" style="height:inherit">
+            <div class="nav-wrapper"><a id="logo-container" href="#top" class="brand-logo"  style="height:inherit" ><img  style="height:inherit" src="assets/img/title/guh-white-header.png" alt="GreatUniHack"></a>
+                <ul id="nav-mobile" class="right side-nav">
+                    <li><a href="#intro">About</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+                    <li><a href="#location">Location</a></li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Hero-->
+<div class="section no-pad-bot" id="index-banner">
+
+    <div class="container">
+        <div class="socialmedia right">
+            <ul>
+                <li>
+                    <a class="white-text" href="https://www.facebook.com/GreatUniHack">
+                        <i class="medium fa fa-facebook-square white-text"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="white-text" href="https://twitter.com/GreatUniHack">
+                        <i class="medium fa fa-twitter-square white-text"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="logo">
+        <h1 class="text_h center header cd-headline letters type">
+            <img  src="assets/img/title/guh-logo.png">
+            Decem<span class="accent_color_text">ber 20</span>15<br>
+            &nbsp<span class="cd-words-wrapper waiting">
+                <b class="is-visible"><span class="accent_color_text">#le</span>arn</b>
+                <b>#build</b>
+                <b>#share</b>
+            </span>
+
+        </h1>
+    </div>
+    </div>
+</div>
+
+<!--Intro and service-->
+<div id="intro" class="section scrollspy">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <h2 class="center header text_h2"> GreatUniHack is a <span class="span_h2">free 36 hours</span>
+                    hackathon where you work in a team with up to <span class="span_h2">3</span>
+                    other hackers to build <span class="span_h2">crazy stuff</span> over the weekend.
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--FAQ-->
+<div class="section scrollspy" id="faq">
+    <div class="container">
+        <h2 class="header text_b">Frequently Asked Questions</h2>
+        <div class="row">
+            <div class="col s12 l6 ">
+                <div class="card white darken-1">
+                    <div class="card-content blue-grey-text">
+                        <span class="card-title blue-grey-text">What is going to be there?</span>
+
+                        <p>A lot of mentoring from industry experts, and volunteers to provide you with help you may need.
+                            A lot of fun mini side events, challenges and team building sessions.
+                            Of course food, drinks, and swag are provided all completely free of charge!
+                            </p>
+                    </div>
                 </div>
             </div>
-            <div class="row faq-container">
-                <div class="col-xs-12">
-                    <section id="faq">
-                        <div class="row">
-                            <div class="span-12">
-                                <h2>Frequently Asked Questions</h2>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-10 col-sm-offset-1">
-                                <div class="col-sm-6">
-                                    <div class="row">
-                                        <div class="col-md-11 col-md-offset-1 faq-question">
-                                            <h3>How is babby formed?</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-11 col-md-offset-1 faq-question">
-                                            <h3>How is babby formed?</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-11 col-md-offset-1 faq-question">
-                                            <h3>How is babby formed?</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="row">
-                                        <div class="col-md-11 faq-question">
-                                            <h3>How is babby formed?</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-11 faq-question">
-                                            <h3>How is babby formed?</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-11 faq-question">
-                                            <h3>How is babby formed?</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis orci erat.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+
+
+            <div class="col s12 l6 ">
+                <div class="card white darken-1">
+                    <div class="card-content blue-grey-text">
+                        <span class="card-title blue-grey-text">Who are the people behind this event?</span>
+                        <p>
+                            We are tech societies from <span class="span_h2">The University of Manchester</span> and  <span class="span_h2">Manchester Metropolitan University</span>
+                            We are extremely passionate about hackathons and tech events and we have run GreatUniHack successfully for 3 years in Manchester.
+                            As well as some other events like workshops and meetups. Check out our <a href="#history">rich history.</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="row past-events-container">
-                <div class="col-xs-12">
-                    <section id="past-events">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <h2>Past Events</h2>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-10 col-sm-offset-1">
-                                <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                                    <a target="_blank" href="http://2014.greatunihack.com/">
-                                        <div class="event">
-                                            <img src="assets/greatunihack-2014.jpg" alt="GreatUniHack 2014">
-                                            <h3>GreatUniHack 2014</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                                    <a target="_blank" href="http://2015s.greatunihack.com/">
-                                        <div class="event">
-                                            <img src="assets/greatunihack-spring-2015.jpg" alt="GreatUniHack Spring 2015">
-                                            <h3>GreatUniHack 2015</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                                    <a target="_blank" href="http://lhd.hacksoc.com/">
-                                        <div class="event">
-                                            <img src="assets/local-hack-day-2015.jpg" alt="Local Hack Day 2015">
-                                            <h3>Local Hack Day 2015</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <ul class="actions">
-                                    <li>
-                                        <a target="_blank" href="https://drive.google.com/file/d/0BxSfLz74ghGpcWJ3TjBPZExxdkE/view">
-                                            <button>
-                                                Sponsor Us
-                                            </button>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
+
+            <div class="col s12 l6 ">
+                <div class="card white darken-1">
+                    <div class="card-content blue-grey-text">
+                        <span class="card-title blue-grey-text">Who can attend?</span>
+
+                        <p>As this event spans overnight, GreatUniHack is restricted to students above the age of
+                            18. Proof of ID is required to participate. If you graduated during the last 12 months
+                            you're still considered a student. Any more than that and you'll have to email us as we deal
+                            with these on a case-by-case basis.</p>
+                    </div>
                 </div>
             </div>
-            <div class="row partners-container">
-                <div class="col-xs-12">
-                    <section id="partners">
-                        <div class="row">
-                            <div class="span-12">
-                                <h2>Partners</h2>
-                            </div>
-                        </div>
-                        <div class="row partners">
-                            <div class="col-sm-4 col-sm-offset-4">
-                                <img src="assets/mlh.png" alt="MLH" title="Major League Hacking">
-                            </div>
-                        </div>
-                    </section>
+
+            <div class="col s12 l6 ">
+                <div class="card white darken-1">
+                    <div class="card-content blue-grey-text">
+                        <span class="card-title blue-grey-text">What should I bring?</span>
+
+                        <p>Bring your laptop, phone and chargers. Other things to consider: spare clothes,
+                            adapters, hardware and a sleeping bag, oh and don't forget your enthusiasm!</p>
+                        <p>We are going to provide you with all food, swag and drinks you will need to keep you going.</p>
+                    </div>
                 </div>
             </div>
-            <div class="row contact-container">
-                <div class="col-xs-12">
-                    <section id="contact">
-                        <div class="row">
-                            <div class="span-12">
-                                <h2>Contact</h2>
-                            </div>
-                        </div>
-                        <div class="col-sm-8 col-sm-offset-2">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <p class="pull-left" style="color:red;" id="contact-error"></p>
-                                    <p class="pull-left" style="color:green;" id="contact-success"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-8 col-sm-offset-2">
-                                <form action="#" method="post" id="the-form">
-                                    <div class="form-inline">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="sr-only" for="exampleInputEmail3">Name</label>
-                                                <input type="text" class="form-control" placeholder="Your Name" name="name" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="sr-only" for="exampleInputEmail3">Name</label>
-                                                <input type="email" class="form-control" placeholder="Your Email" name="email" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-xs-12">
-                                            <textarea class="form-control" placeholder="Message" name="message" required></textarea>
-                                        </div>
-                                    </div>
-                                </formf>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-8 col-sm-offset-2">
-                                <div class="form-actions">
-                                    <ul>
-                                        <li>
-                                            <input class="submit-button" type="submit" value="Send Message">
-                                        </li>
-                                        <li>
-                                            <input class="reset-button" type="reset" value="Clear Form">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+
+            <div class="col s12 l6 ">
+                <div class="card white darken-1">
+                    <div class="card-content blue-grey-text">
+                        <span class="card-title blue-grey-text">I haven't coded much. Should I come?</span>
+
+                        <p>Definitely. Networking with and seeing awesome hackers in action will expose you to a
+                            tremendous amount of knowledge. We also have an amazing suit of industry experts and mentors
+                            that are happy to assist you! Still unsure? Then please read <a
+                            href="https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000" style="margin: 0">this</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 l6 ">
+                <div class="card white darken-1">
+                    <div class="card-content blue-grey-text">
+                        <span class="card-title blue-grey-text">Who owns my IP/code/idea?</span>
+
+                        <p>You own all the rights to your intellectual property. We won't claim any right over anything
+                            made during this event.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 l6 ">
+                <div class="card white darken-1">
+                    <div class="card-content blue-grey-text">
+                        <span class="card-title blue-grey-text">I don't have a team. Help?</span>
+
+                        <p>Don't let that discourage you ― it is actually part of the fun! You will have 3 new friends
+                            by the end of the weekend. A team building session will be organized to help you form teams.
+                            We encourage everyone to use <a href="http://devpost.com/" style="margin: 0">Devpost</a> to
+                            find teammates.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l6 ">
+                <div class="card white darken-1">
+                    <div class="card-content blue-grey-text">
+                        <span class="card-title blue-grey-text">Are there any rules?</span>
+
+                        <p>You can't submit a pre-existing projects for prizes. We are strict about following <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct.</a></p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Jquery -->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-        (function (window, undefined){$("#the-form").on("submit",function (e){e.preventDefault();$.post("./process_form.php", $("#the-form").serialize(),function (r){$.parseJSON(r)[0]=="success"&&$("#contact-success").html("Message sent successfully!")&&$("#contact-error").html("")||($.parseJSON(r)[0]=="error"&&$("#contact-error").html($.parseJSON(r)[1])&&$("#contact-success").html(""))})});})(window, undefined);
-        </script>
-    </body>
+    </div>
+</div>
+
+
+<!--Sponsors-->
+<div class="section scrollspy" id="sponsors">
+    <div class="container center">
+        <div class="tier tier-partner">
+            <h3 class="tier-title">Venue Sponsor</h3>
+           <!-- <a href="http://greatunihack.com" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" alt="Placeholder"
+                    style="max-height: 10em"></a>-->
+        </div>
+        <div class="tier tier-sponsor">
+            <h3 class="tier-title">Sponsors</h3>
+        </div>
+        <!--<div class="tier tier-sponsor tier-gold">
+            <a href="http://www.greatunihack.com" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" alt="Placeholder"></a>
+            <a href="http://www.greatunihack.com" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" alt="Placeholder"></a>
+        </div>
+        <div class="tier tier-sponsor tier-silver">
+            <a href="http://www.greatunihack.com" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" alt="placeholder"/></a>
+            <a href="http://www.greatunihack.com" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" alt="placeholder"/></a>
+            <a href="http://www.greatunihack.com" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" alt="placeholder"/></a>
+            <a href="http://www.greatunihack.com" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" alt="placeholder"/></a>
+        </div>
+        <div class="tier tier-sponsor tier-startup">
+            <a href="http://www.greatunihack.com" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" alt="placeholder"/></a>
+            <a href="http://www.greatunihack.com" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" alt="placeholder"/></a>
+            <a href="http://www.greatunihack.com" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" alt="placeholder"/></a>
+            <a href="http://www.greatunihack.com" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" alt="placeholder"/></a>
+        </div>-->
+        <div class="tier tier-partner">
+            <h3 class="tier-title">Internet Sponsor</h3>
+            <a href="https://telcom.io" target="_blank"><img
+                    src="assets/img/sponsors/telcom.png" class="sponsor-wide" alt="Telcom"></a>
+        </div>
+        <div class="tier tier-partner">
+            <h3 class="tier-title">Partners</h3>
+<!--            <a href="http://mlh.io/" target="_blank"><img src="assets/img/sponsors/placeholder.png"
+                                                          alt="Major League Hacking" style="max-height: 10em"></a>
+           --> <br>
+            <a href="http://manchester.ac.uk" target="_blank"><img
+                    src="assets/img/sponsors/uom.png" class="sponsor-wide"
+                    alt="University of Manchester"></a>
+            <a href="http://www.cssoc.co.uk/" target="_blank"><img
+                    src="assets/img/sponsors/cssoc.png" class="sponsor-wide"
+                    alt="CSSoc"></a>
+            <a href="https://www.facebook.com/groups/manchester.ultimate.programming/" target="_blank"><img
+                    src="assets/img/sponsors/up.png" alt="1-UP"></a>
+            <a href="https://www.facebook.com/groups/1018426884837975" target="_blank"><img
+                    src="assets/img/sponsors/hacksoc.jpg" class="sponsor-wide"
+                    alt="HackSoc: Manchester"></a>
+        </div>
+        <div class="tier tier-partner">
+            <h3 class="tier-title">Event Partners</h3>
+           <!-- <a href="http://www.greatunihack.com" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png"
+                    class="sponsor-wide event-partner" alt="placeholder"></a>-->
+        </div>
+        <div class="tier tier-partner">
+            <h3 class="tier-title">Hardware Lab Partners</h3>
+           <!-- <a href="http://www.estimote.com" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" class="sponsor-wide"
+                    alt="Estimote"></a>
+            <a href="http://www.oculus.com" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" class="sponsor-wide"
+                    alt="Oculus VR"></a>
+            <a href="http://www.leapmotion.com/" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" class="sponsor-wide"
+                    alt="Leap Motion"></a>
+            <a href="https://getpebble.com" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" alt="Pebble"></a>
+            <a href="http://thalmic.com" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" class="sponsor-wide"
+                    alt="Thalmic Labs"></a>
+            <a href="http://spark.io/" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" class="sponsor-wide"
+                    alt="Spark"></a>
+            <br>-->
+        </div>
+        <div class="tier tier-partner">
+            <h3 class="tier-title">Media Partners</h3>
+         <!--   <a href="http://greatunihack.com" target="_blank"><img
+                    src="assets/img/sponsors/placeholder.png" class="sponsor-wide"
+                    alt="placeholder"></a>-->
+        </div>
+        <h3>Interested in sponsoring us?</h3>
+        <a href="https://drive.google.com/open?id=0BxSfLz74ghGpcWJ3TjBPZExxdkE" target="_blank">
+            <button class="btn  waves-effect waves-light blue white-text " type="submit">Sponsorship proposal
+                <i class=" right white-text"></i></button>
+        </a>
+    </div>
+</div>
+<!--History-->
+<div class="section scrollspy" id="history">
+    <div class="container">
+        <h2 class="header default_color_text">Past Events</h2>
+
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/img/history/guh14.png">
+                    </div>
+                    <div class="card-content">
+            <span class="card-title activator default_color_text text-darken-4">GreatUniHack 2014<i
+                    class="mdi-navigation-more-vert right"></i></span>
+
+                        <p><a href="http://2014.greatunihack.com">Website</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title default_color_text text-darken-4">GreatUniHack 2014<i
+                                class="mdi-navigation-close right"></i></span>
+
+                        <p>Hosted by <a href="http://cssoc.co.uk/" style="margin: 0">CSSoc</a>, 1UP and Miso Zmiric, the very first GreatUniHack was exclusive to students
+                            from The University of Manchester. It lasted 8 hours and featured 20 teams with a total of 80
+                            attendees.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/img/history/guh15.png">
+                    </div>
+                    <div class="card-content">
+            <span class="card-title activator default_color_text text-darken-4">GreatUniHack 2015S<i
+                    class="mdi-navigation-more-vert right"></i></span>
+
+                        <p><a href="http://2015s.greatunihack.com">Website</a></p>
+                    </div>
+                    <div class="card-reveal">
+            <span class="card-title default_color_text text-darken-4">GreatUniHack Spring 2015 <i
+                    class="mdi-navigation-close right"></i></span>
+
+                        <p>Organized by a new team that formed a partnership with Major League Hacking, the second
+                            edition of GreatUniHack brought together 180 hackers from 5 different European countries.
+                            52 projects were submitted by the end of the 36th hour. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/img/history/lhd15.png">
+                    </div>
+                    <div class="card-content">
+            <span class="card-title activator default_color_text text-darken-4">Local Hack Day<i
+                    class="mdi-navigation-more-vert right"></i></span>
+
+                        <p><a href="http://localhackday.hacksoc.com/2015">Website</a></p>
+                    </div>
+                    <div class="card-reveal">
+            <span class="card-title default_color_text text-darken-4">LocalHackDay<i
+                    class="mdi-navigation-close right"></i></span>
+
+                        <p>A 12 hours event that is focused on learning. With a total of 24 workshops, 150 aspiring
+                            computer scientists from all across Manchester came to take part in this educational,
+                            hacky environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Location-->
+<div class="section scrollspy" id="location">
+    <div class="parallax-container">
+        <div class="center winter-overlay">
+            <h2 class="header white-text text_b">Location</h2>
+
+            <p class="white-text">To be disclosed</p>
+
+            <p class="white-text">Secret, Manchester</p>
+
+            <p class="white-text">MM MM</p>
+        </div>
+        <div class="parallax"><img src="assets/img/parallax1.png"></div>
+    </div>
+    <div id="map-canvas" style="width: 100%; height: 400px;"></div>
+</div>
+
+<!--Footer-->
+
+<footer id="contact" class="page-footer default_color scrollspy">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <form class="col s12" action="#" method="post" id="the-form">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="mdi-action-account-circle prefix white-text"></i>
+                            <input id="icon_prefix" name="name" type="text" class="validate white-text">
+                            <label for="icon_prefix" class="white-text">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="mdi-communication-email prefix white-text"></i>
+                            <input id="icon_email" name="email" type="email" class="validate white-text">
+                            <label for="icon_email" class="white-text">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="mdi-editor-mode-edit prefix white-text"></i>
+                            <textarea id="icon_prefix2" name="message"
+                                      class="materialize-textarea white-text"></textarea>
+                            <label for="icon_prefix2" class="white-text">Message</label>
+                        </div>
+                        <div class="col offset-s7 s5">
+                            <button class="btn waves-effect waves-light red darken-1" type="submit">Submit
+                                <i class="mdi-content-send right white-text"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Contact Us</h5>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Social</h5>
+                <ul>
+                    <li>
+                        <a class="white-text" href="https://www.facebook.com/GreatUniHack">
+                            <i class="small fa fa-facebook-square white-text"></i> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="https://twitter.com/GreatUniHack">
+                            <i class="small fa fa-twitter-square white-text"></i> Twitter
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright default_color">
+        <div class="container">
+            Adapted from a template by <a class="white-text" href="http://joashpereira.com">Joash Pereira</a>.
+        </div>
+    </div>
+</footer>
+
+<!--  Scripts-->
+<script src="assets/min/plugin-min.js"></script>
+<script src="assets/min/custom-min.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script src="assets/min/jquery-2.1.4.min.js"></script>
+<script src="assets/js/guh.js"></script>
+<script type="text/javascript">
+    (function (window, undefined){$("#the-form").on("submit",function (e){e.preventDefault();$.post("./contact.php", $("#the-form").serialize(),function (r){$.parseJSON(r)[0]=="success"&&$("#contact-success").html("Message sent successfully!")&&$("#contact-error").html("")||($.parseJSON(r)[0]=="error"&&$("#contact-error").html($.parseJSON(r)[1])&&$("#contact-success").html(""))})});})(window, undefined);
+</script>
+</body>
 </html>
