@@ -5,10 +5,10 @@
 (function () {
   function initialize() {
     var mapCanvas = document.getElementById('map-canvas');
-    var locationLatLon = new google.maps.LatLng(53.479251, -2.247926); //todo change to venue latln
+    var locationLatLon = new google.maps.LatLng(53.4622928, -2.2288835); //todo change to venue latln
     var mapOptions = {
       center: locationLatLon,
-      zoom: 10, //18 when confirm venue
+      zoom: 18, //18 when confirm venue
       mapTypeControl: true,
       scrollwheel: false,
       navigationControl: false,

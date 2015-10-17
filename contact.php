@@ -16,7 +16,7 @@ try
   $msg = ucfirst(htmlentities(trim($_POST['message'])));
   $date = date('d-m-Y H:i:s');
   $to = "contact@greatunihack.com";
-  $subject = "[2016s]Contact query";
+  $subject = "[2015f]Contact query";
   $headers = "From: " . $name . " < " . strip_tags($email) . " >\r\n";
   $headers .= "Reply-To: " . $name . " < " . strip_tags($email) . " >\r\n";
   $headers .= "MIME-Version: 1.0\r\n";
