@@ -4,7 +4,12 @@
  * Made By Joash Pereira
  * Thanks for MaterializeCSS.com
  */
-
+.container center sub{
+padding: 0 1.5rem;
+margin: 0 auto;
+max-width: 1280px;
+width: 90%
+}
 
 .default_color {
   background-color: #00AAFF !important
