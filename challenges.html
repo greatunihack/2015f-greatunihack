@@ -27,16 +27,30 @@
     <link href="assets/min/custom-min.css" type="text/css" rel="stylesheet">
     <style>
         .card img {
-            min-height: 15em;
-            min-width: 15em;
+            /*min-height: 15em;*/
+            min-width: 90%;
             max-height: 15em;
             max-width: 15em;
+            top:-100%;
+            bottom:-100%;
+            position:absolute !important;
+            margin:auto;
+
         }
         .card a {
-           margin: 0;
+            margin: 0;
+        }
+        .card {
+            height: 350px;
+            max-height: inherit;
+            max-width: inherit;
+
         }
         body {
             background-color: #0AF;
+        }
+        .card .card-image{
+            height:200px;
         }
     </style>
 </head>
@@ -65,163 +79,161 @@
 </div>
 
 <!--Hero-->
-    <div class="container">
-        <h2 class="header accent_color_text">Challenges</h2>
+<div class="container">
+    <h2 class="header accent_color_text">Challenges</h2>
 
-        <div class="row">
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="assets/img/sponsors/tns.png">
-                    </div>
-                    <div class="card-content">
-                    <span class="card-title activator default_color_text text-darken-4">Best retro game<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                    <p>PRIZE: <a href="http://www.amazon.com">x4 swag stuff</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title default_color_text text-darken-4">Best Retro Game<i
-                                class="mdi-navigation-close right"></i></span>
-
-                        <p>Sponsored by <a href="https://www.teamnetsol.com/" target="_blank">Team Netsol</a>.
-                            Think retro, think old, think the
-                            create a game on any platform that will send us in nostalgic coma longing for the days of of sega, N64, atari and arcades.
-                            If you have any question contact our  <a href="#sponsors">representative</a>.
-                        </p>
-                    </div>
+    <div class="row">
+        <div class="col s12 m4 l4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="assets/img/sponsors/wata.png" alt="Web applications UK">
                 </div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="assets/img/sponsors/estimote.png">
-                    </div>
-                    <div class="card-content">
-            <span class="card-title activator default_color_text text-darken-4">Best use of Beacons<i
-                    class="mdi-navigation-more-vert right"></i></span>
-
-                        <p>PRIZE: <a href="http://www.amazon.com">x4 Swag prize</a></p>
-                    </div>
-                    <div class="card-reveal">
-            <span class="card-title default_color_text text-darken-4">Best use of Beacons<i
-                    class="mdi-navigation-close right"></i></span>
-                        <p>Sponsored by <a href="http://www.estimote.com" target="_blank">Estimote</a>.
-                            Using the beacons, create something impressive, you have the complete freedom to use them however you want,
-                            remember you can borrow some from the hardware library if you needed so.
-                            If you have any question contact our  <a href="#sponsors">representative</a>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="assets/img/sponsors/wata.png" alt="Web applications UK">
-                    </div>
-                    <div class="card-content">
+                <div class="card-content">
             <span class="card-title activator default_color_text text-darken-4">Travel Game<i
                     class="mdi-navigation-more-vert right"></i></span>
 
-                        <p>PRiZE:<a href="http://www.amazon.com">x4 Swag Prize</a></p>
-                    </div>
-                    <div class="card-reveal">
+                    <p>PRiZE:<a href="http://www.amazon.com">x4 Swag Prize</a></p>
+                </div>
+                <div class="card-reveal">
             <span class="card-title default_color_text text-darken-4">Travel Game<i
                     class="mdi-navigation-close right"></i></span>
-                        <p>Sponsored by <a href="http://www.webapplicationsuk.com/" target="_blank">WebApplication UK</a>.
-                            If you have any question contact our  <a href="#sponsors">representative</a>.
-                        </p>
-                    </div>
+                    <p>Sponsored by <a href="http://www.webapplicationsuk.com/" target="_blank">WebApplication UK</a>.
+                        If you have any question contact our  <a href="#sponsors">representative</a>.
+                    </p>
                 </div>
             </div>
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"  src="assets/img/sponsors/cdl.png" alt="CDL UK">
-                    </div>
-                    <div class="card-content">
+        </div>
+        <div class="col s12 m4 l4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator"  src="assets/img/sponsors/cdl.png" alt="CDL UK">
+                </div>
+                <div class="card-content">
             <span class="card-title activator default_color_text text-darken-4">CDL Challenge<i
                     class="mdi-navigation-more-vert right"></i></span>
 
-                        <p>PRIZE:<a href="http://www.amazon.com">x4 swag prize</a></p>
-                    </div>
-                    <div class="card-reveal">
+                    <p>PRIZE:<a href="http://www.amazon.com">x4 swag prize</a></p>
+                </div>
+                <div class="card-reveal">
             <span class="card-title default_color_text text-darken-4">CDL Challenge<i
                     class="mdi-navigation-close right"></i></span>
-                        <p>Sponsored by <a href="http://www.cdl.co.uk" target="_blank">CDL</a>.
-                            If you have any question contact our  <a href="#sponsors">representative</a>.
-                        </p>
-                    </div>
+                    <p>Sponsored by <a href="http://www.cdl.co.uk" target="_blank">CDL</a>.
+                        If you have any question contact our  <a href="#sponsors">representative</a>.
+                    </p>
                 </div>
             </div>
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"  src="assets/img/sponsors/jg.png" alt="JustGiving">
-                    </div>
-                    <div class="card-content">
+        </div>
+
+        <div class="col s12 m4 l4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="assets/img/sponsors/tns.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator default_color_text text-darken-4">Best retro game<i
+                            class="mdi-navigation-more-vert right"></i></span>
+                    <p>PRIZE: <a href="http://www.amazon.com">x4 swag stuff</a></p>
+                </div>
+                <div class="card-reveal">
+                        <span class="card-title default_color_text text-darken-4">Best Retro Game<i
+                                class="mdi-navigation-close right"></i></span>
+
+                    <p>Sponsored by <a href="https://www.teamnetsol.com/" target="_blank">Team Netsol</a>.
+                        Think retro, think old, think the
+                        create a game on any platform that will send us in nostalgic coma longing for the days of of sega, N64, atari and arcades.
+                        If you have any question contact our  <a href="#sponsors">representative</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4 l4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="assets/img/sponsors/estimote.png">
+                </div>
+                <div class="card-content">
+            <span class="card-title activator default_color_text text-darken-4">Best use of Beacons<i
+                    class="mdi-navigation-more-vert right"></i></span>
+
+                    <p>PRIZE: <a href="http://www.amazon.com">x4 Swag prize</a></p>
+                </div>
+                <div class="card-reveal">
+            <span class="card-title default_color_text text-darken-4">Best use of Beacons<i
+                    class="mdi-navigation-close right"></i></span>
+                    <p>Sponsored by <a href="http://www.estimote.com" target="_blank">Estimote</a>.
+                        Using the beacons, create something impressive, you have the complete freedom to use them however you want,
+                        remember you can borrow some from the hardware library if you needed so.
+                        If you have any question contact our  <a href="#sponsors">representative</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4 l4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator"  src="assets/img/sponsors/jg.png" alt="JustGiving">
+                </div>
+                <div class="card-content">
             <span class="card-title activator default_color_text text-darken-4">JustGiving Challenge<i
                     class="mdi-navigation-more-vert right"></i></span>
 
-                        <p>PRIZE:<a href="http://www.amazon.com">x4 swag prize</a></p>
-                    </div>
-                    <div class="card-reveal">
+                    <p>PRIZE:<a href="http://www.amazon.com">x4 swag prize</a></p>
+                </div>
+                <div class="card-reveal">
             <span class="card-title default_color_text text-darken-4">Best use of JustGiving<i
                     class="mdi-navigation-close right"></i></span>
-                        <p>Sponsored by <a href="https://api.justgiving.com/docs" target="_blank">JustGiving</a>.
-                            Use the JustGiving API in any program and impress us, we will be selecting the one we think is the coolest!
+                    <p>Sponsored by <a href="https://api.justgiving.com/docs" target="_blank">JustGiving</a>.
+                        Use the JustGiving API in any program and impress us, we will be selecting the one we think is the coolest!
                         If you have any question contact our  <a href="#sponsors">representative</a>.
                     </p>
-                    </div>
                 </div>
             </div>
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"  src="assets/img/sponsors/mlh.png" alt="MLH">
-                    </div>
-                    <div class="card-content">
+        </div>
+        <div class="col s12 m4 l4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" style="min-width:0;max-width: 13em;max-height: 10em" src="assets/img/sponsors/mlh.png" alt="MLH">
+                </div>
+                <div class="card-content">
             <span class="card-title activator default_color_text text-darken-4">Amazon Challenge<i
                     class="mdi-navigation-more-vert right"></i></span>
 
-                        <p>PRIZE:<a href="http://www.amazon.com">x4 swag prize</a></p>
-                    </div>
-                    <div class="card-reveal">
+                    <p>PRIZE:<a href="http://www.amazon.com">x4 swag prize</a></p>
+                </div>
+                <div class="card-reveal">
             <span class="card-title default_color_text text-darken-4">Best integration of Amazon Web Services<i
                     class="mdi-navigation-close right"></i></span>
-                        <p>Sponsored by <a href="https://www.amazon.com/" target="_blank">Amazon in partnership with MLH</a>.
-                            Integrate your project with amazon web services to be eligible for this prize, we will select the most impressive one!
-                            If you have any question contact our  <a href="#sponsors">representative</a>.
-                        </p>
-                    </div>
+                    <p>Sponsored by <a href="https://www.amazon.com/" target="_blank">Amazon in partnership with MLH</a>.
+                        Integrate your project with amazon web services to be eligible for this prize, we will select the most impressive one!
+                        If you have any question contact our  <a href="#sponsors">representative</a>.
+                    </p>
                 </div>
             </div>
+        </div>
 
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"  src="assets/img/sponsors/mlh.png" alt="MLH">
-                    </div>
-                    <div class="card-content">
-            <span class="card-title activator default_color_text text-darken-4">Domain Name Challenge<i
+        <div class="col s12 m4 l4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img style="min-width:0;max-width: 13em;max-height: 10em" class="activator"  src="assets/img/sponsors/mlh.png" alt="MLH">
+                </div>
+                <div class="card-content">
+            <span class="card-title activator default_color_text text-darken-4">Best Domain Name<i
                     class="mdi-navigation-more-vert right"></i></span>
 
-                        <p>PRIZE:<a href="http://www.amazon.com">x1 swag prize</a></p>
-                    </div>
-                    <div class="card-reveal">
+                    <p>PRIZE:<a href="http://www.amazon.com">x1 swag prize</a></p>
+                </div>
+                <div class="card-reveal">
             <span class="card-title default_color_text text-darken-4">Best Domain name<i
                     class="mdi-navigation-close right"></i></span>
-                        <p>Sponsored by <a href="https://www.domains.com/" target="_blank">Domain in partnership with MLH</a>.
-                            We are going to select the coolest, funniest, or best domain name.
-                            If you have any question come speak to one of our <a href="#sponsors">representative</a>.
-                        </p>
-                    </div>
+                    <p>Sponsored by <a href="https://www.domains.com/" target="_blank">Domain in partnership with MLH</a>.
+                        We are going to select the coolest, funniest, or best domain name.
+                        If you have any question come speak to one of our <a href="#sponsors">representative</a>.
+                    </p>
                 </div>
             </div>
-
-
-
         </div>
     </div>
+</div>
 <!--  Scripts-->
 <script src="assets/min/plugin-min.js"></script>
 <script src="assets/min/custom-min.js"></script>
